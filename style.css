@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(Fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: Futura;
+  src: url(Fonts/Futura-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 0vw 1vw;
+  padding-top: 20vh;
+}
+
+#page1 > h1 {
+  font-family: Futura;
+  font-size: 15.8vw;
+  text-transform: uppercase;
+  line-height: 13vw;
+  letter-spacing: -8px;
+}
+
+.video-container {
+  width: 100%;
+  height: 100vh;
+  margin-top: 1vw;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-container .play {
+  position: fixed;
+  font-family: Futura;
+  font-size: 1vw;
+  padding: 2vw 1.5vw;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0;
+  scale: 0;
+}
