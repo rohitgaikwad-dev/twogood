@@ -33,7 +33,25 @@ body {
   padding-top: 20vh;
 }
 
-#page1 > h1 {
+.bonding {
+  width: width;
+  height: 13.5vw;
+  position: relative;
+}
+
+.delay {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.delay .last {
+  left: 34%;
+}
+
+.bonding h1 {
+  position: absolute;
+  top: 0%;
   font-family: Futura;
   font-size: 15.8vw;
   text-transform: uppercase;
@@ -49,6 +67,8 @@ body {
 }
 
 .video-container video {
+  position: absolute;
+  top: 0%;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -65,4 +85,78 @@ body {
   text-transform: uppercase;
   opacity: 0;
   scale: 0;
+  z-index: 11;
 }
+
+#page2 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 1vw;
+  margin: 3vw 0vw;
+}
+
+#page2 .elem {
+  height: 100%;
+  width: 32.5%;
+  overflow: hidden;
+}
+
+.elem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  scale: 1.1;
+}
+
+#page3 {
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 500px) {
+
+  #page1{
+    min-height: auto;
+  }
+  .bonding h1{
+    margin: 0vw 2vw;
+    font-size: 15.5vw;
+    letter-spacing: -4px;
+  }
+  .video-container{
+    height: 28vh;
+    margin-bottom: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-container video {
+    padding: 0 2vw;
+  }
+  .video-container .play {
+    position: absolute;
+    font-family: Futura;
+    font-size: 5vw;
+    padding: 11vw 8vw;
+    opacity: 1;
+    scale: 1;
+  }
+
+
+  #page2 {
+    flex-direction: column;
+    padding: 5vw 3vw;
+    margin: 3vw 0vw;
+  }
+  #page2 .elem {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+}
+
