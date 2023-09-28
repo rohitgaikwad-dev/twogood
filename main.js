@@ -6,30 +6,28 @@ const loco = () => {
 };
 loco();
 
-const videoConAnime = () => {
-  const videoContainer = document.querySelector(".video-container");
-  const play = document.querySelector(".play");
-
-  videoContainer.addEventListener("mouseenter", () => {
-    gsap.to(play, {
-      opacity: 1,
+function videoconAnimation() {
+  var videocon = document.querySelector(".video-container");
+  var playbtn = document.querySelector(".play");
+  videocon.addEventListener("mouseenter", () => {
+    gsap.to(playbtn, {
       scale: 1,
+      opacity: 1,
     });
   });
-  videoContainer.addEventListener("mouseleave", () => {
-    gsap.to(play, {
-      opacity: 0,
+  videocon.addEventListener("mouseleave", () => {
+    gsap.to(playbtn, {
       scale: 0,
     });
   });
-  videoContainer.addEventListener("mousemove", (e) => {
-    gsap.to(play, {
-      left: e.x - 50,
-      top: e.y - 50,
+  document.addEventListener("mousemove", (e) => {
+    gsap.to(playbtn, {
+      left: e.x - 70,
+      top: e.y - 80,
     });
   });
-};
-videoConAnime();
+}
+videoconAnimation();
 
 const textAnime = () => {
   gsap.from(".bonding h1", {
@@ -44,7 +42,6 @@ const videoAnime = () => {
     top: "10%",
     opacity: 0,
     delay: 0.3,
-    duraiton: 0.3,
   });
 };
 videoAnime();
