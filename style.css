@@ -101,6 +101,10 @@ body {
   position: relative;
 }
 
+.firsthead:nth-child(1){
+overflow: hidden;
+}
+
 .delay {
   position: relative;
   display: flex;

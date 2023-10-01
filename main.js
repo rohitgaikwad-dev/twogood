@@ -119,6 +119,7 @@ const textAnime = () => {
   gsap.from(".bonding h1", {
     top: "100%",
     stagger: 0.3,
+    delay: 0.5,
   });
 };
 textAnime();
